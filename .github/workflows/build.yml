@@ -11,6 +11,10 @@ jobs:
         with:
           root_file: ./Principal.tex
           working_directory: ./src
+      - name: Generate build number
+        uses: einaregilsson/build-number@v3
+        with:
+          token: ${{secrets.github_token}}   
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -18,8 +22,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
           tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          body: TCC Versão ${{ github.ref }}
+          release_name: SICAAF - ${{ steps.buildnumber.outputs.build_number }}
+          body: Sistema Informatizado de Controle de Acesso em Ambientes Fechados
           draft: false
           prerelease: false
       - name: Upload Release Asset
