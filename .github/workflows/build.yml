@@ -9,7 +9,7 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: ./src/Principal.tex
+          root_file: ./Principal.tex
           working_directory: ./src
       - name: Create Release
         id: create_release
