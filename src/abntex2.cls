@@ -147,8 +147,8 @@
 \newcommand{\anexosname}{Anexos}
 \newcommand{\apendicename}{AP\^ENDICE}
 \newcommand{\apendicesname}{Ap\^endices}
-\newcommand{\orientadorname}{Orientador:}
-\newcommand{\coorientadorname}{Coorientador:}
+\newcommand{\orientadorname}{Orientadora:}
+\newcommand{\coorientadorname}{Coorientadora:}
 \newcommand{\folhadeaprovacaoname}{Folha de aprova\c{c}\~ao}
 \newcommand{\resumoname}{Resumo} 
 \newcommand{\listadesiglasname}{Lista de siglas}
