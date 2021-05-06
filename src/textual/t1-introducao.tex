@@ -1,43 +1,44 @@
 \chapter{INTRODUÇÃO}
 \label{cap:introducao}
 
-De acordo com Chiavenato \cite{chiavenato2003introducao} há na sociedade necessidades humanas básicas,
-dentre elas a necessidade de se manter seguro com relação a ameaças externas
-que o coloquem em perigo físico. A partir disso é possível perceber que a sensação
-de segurança é de suma relevância para o convívio em sociedade, e como há um crescente
+De acordo com Chiavenato \cite{chiavenato2003introducao} há na sociedade necessidades humanas básicas.
+Dentre elas a necessidade de se manter seguro com relação a ameaças externas
+que o coloquem em perigo físico. A partir disso, é possível perceber que a sensação
+de segurança é de suma relevância para o convívio em sociedade. Em um mundo o qual há um crescente
 aumento dos aglomerados se fez necessário implementar medidas que possam assegurar a
-integridade de todos, e devido ao alto custo atual dos modelos disponíveis a necessidade
-de encontrar uma maneira de sanar o problema sem que se gaste muitos recursos se faz
-cada vez mais evidente. É calculado então que o sucesso será atingido no momento em que
+integridade de todos. O que remete ao alto custo atual dos modelos disponíveis, trazendo a necessidade
+de encontrar uma maneira de sanar este problema economizando o máximo de recursos. Este trabalho então, tem a missão de explicitar uma solução eficiente e eficaz para este obstáculo frente o corpo social. Calcula-se que o sucesso será atingido no momento em que
 o nível de preservação física estiver atestado e o capital poupado.
 
 
-Sendo assim, os institutos de ensino como um todo possuem um alto fluxo de pessoas
-diariamente, sejam alunos, funcionários e/ou visitantes. Dito isso, se faz necessário
+
+No Brasil, no ano de 2008, foi sancionada a Lei nº 11.892, de 29 de dezembro, a qual estabelecia a criação da Rede Federal de Educação Profissional, Científica e Tecnológica (Rede Federal). A mesma é reconhecida nacionalmente pela qualidade do ensino ofertado, pela diversidade de cursos e por sua relevância atuante junto à população e empresas. Como membra integrante do Sistema Federal de Ensino, vinculado ao Ministério da Educação (MEC), a Rede Federal é constituída por: Instituições Federais de Educação, Ciência e Tecnologia (Institutos Federais ou IFs), sendo 38 deles, a Universidade Tecnológica Federal do Paraná - UTFPR, os Centros Federais de Educação Tecnológica Celso Suckow da Fonseca do Rio de Janeiro (Cefet-RJ) e de Minas Gerais (Cefet-MG), as Escolas Técnicas vinculadas às Universidades Federais, sendo 22 delas e o Colégio Pedro II. Considerando os respectivos campi associados, totalizam-se 669 unidades distribuídas entre as 27 unidades federativas da nação. Cada instituição possui autonomia administrativa,  patrimonial, financeira, didático-pedagógica e disciplinar. Cabendo ao MEC o planejamento e o desenvolvimento da Rede Federal, incluindo a garantia de adequada disponibilidade orçamentária e financeira. \cite{redefederal}.
+
+
+
+Isto posto, no que diz respeito aos Institutos Federais estes são estruturados a partir dos vários modelos existentes e da experiência e capacidade instaladas especialmente nos Centros Federais de Educação Tecnológica (Cefet), nas escolas técnicas e agrotécnicas federais e nas escolas técnicas vinculadas às universidades federais. Criados a partir das antigas instituições federais, os IFs são instituições pluricurriculares e multicampi, possuindo reitorias, campus, campus avançados, polos de inovação e polos de educação a distância, especializados na oferta de educação profissional e tecnológica (EPT) em todos os seus níveis e formas de articulação com os demais níveis e modalidades da Educação Nacional, além de licenciaturas, bacharelados e pós-graduações stricto sensu. \cite{institutofederal}.
+
+
+
+Por conseguinte, o IF Fluminense, encontra-se em 12 municípios do estado do Rio de Janeiro, com uma malha espacial que alcança 12 campi, além do Polo de Inovação Campos dos Goytacazes, do Centro de Referência em Tecnologia, Informação e Comunicação na Educação, da Unidade de Formação de Cordeiro e da Reitoria, reunindo 15.666 estudantes \cite{iffemnumeros}, 1.665 servidores ativos, sendo 713 Técnico-administrativos em Educação e 952 professores. \cite{iffluminense}. 
+
+
+Sendo assim, neste estudo utilizaremos como referência o IF Fluminense - Campus Campos Centro (IFF Campos Centro), apesar do fato de que as soluções apresentadas aqui poderão ser utilizadas em quaisquer ambientes que desejem implementar um sistema de controle de acesso por meio de catracas. Dito isso, como apresentado anteriormente, os institutos de ensino como um todo possuem um alto fluxo de pessoas
+diariamente, sejam alunos, funcionários e/ou visitantes. Fazendo-se necessário
 estabelecer uma forma de controlar quem circula pelas dependências dos prédios, quando
-entram e/ou saem, no entanto, atualmente, os meios convencionais de solução disponíveis
+entram e/ou saem, no entanto, atualmente, como mostram o "Relatório para Aquisição de Novas Catracas" \cite{relatorio},  realizado pela Diretoria de
+Tecnologia Informação e Comunicação (DTIC) do IFF Campos Centro e a reportagem "Fabricação de catracas por alunos irá trazer economia de até R\$ 870 mil ao IFF Campos Centro" \cite{reportagem}, realizada pelos veículos internos do campus,  os meios convencionais de solução disponíveis
 no mercado são extremamente custosos o que impede a implementação na maioria dos lugares.
 
 
+
 Desta forma, enquanto existirem espaços públicos ou privados, os quais possuam ou não
-informações sensíveis, onde transitem um número considerável de indivíduos, haverá o
+informações sensíveis, ou seja, quaisquer informações que não são de acesso público indiscriminado, onde transitem um número considerável de indivíduos, haverá o
 desejo e a necessidade de controlar a movimentação de todos.
 
-\section{Objetivos}
+\section{Motivação e Justificativa}
 
-Busca-se então explorar medidas de controle de custo reduzido as quais tornarão
-possível a implementação de um sistema confiável que auxiliará na segurança e que,
-quando aplicadas corretamente, serão benéficas para todas as pessoas que circulam
-por estas instituições. Capaz de identificar e autorizar a entrada e saída daqueles
-inseridos no espaço em questão, desenvolver uma aplicação que execute com o mínimo
-de erros possível aquilo que for estabelecido na fase de projeto e implementar de
-forma íntegra o software desenvolvido, tendo como perspectiva de resultado positivo
-o aumento na segurança e a economia relativa ao uso de tecnologia similar já existente
-no cenário tecnológico atual.
-
-\section{Justificativa}
-
-O projeto se baseia na dificuldade atual de se implantar sistemas similares,
+O projeto se baseia na dificuldade atual de se implantar sistemas capazes de controlar o acesso de pessoas a lugares onde o mesmo é feito através de catracas,
 uma vez que as tecnologias que se encontram no mercado são muito custosas e,
 na maioria dos casos, inacessíveis ao grande público. Segundo matéria veiculada
 no portal online do Instituto Federal Fluminense, “Fabricação de catracas por
@@ -45,7 +46,7 @@ alunos irá trazer economia de até R\$ 870 mil ao IFF Campos Centro”, publica
 em 24/05/2019, estudantes avaliaram orçamentos de diversas empresas do ramo permitindo
 estabelecer um escopo que varia entre trezentos e oitocentos e setenta mil reais,
 enquanto o orçamento para este projeto é de sessenta mil reais, para a instalação
-das dezenove catracas e de um sistema que as gerencie.
+das dezenove catracas e de um sistema que as gerencie, uma vez que essas eram as exigências do IFF Campos Centro o qual será utilizado como cenário específico desta monografia.
 
 
 Sendo assim, no momento em que o sistema atingir seu estado de produção será possível
@@ -53,11 +54,25 @@ aplicá-lo a qualquer ambiente que necessite de um controle genérico de acesso,
 principalmente em escolas e universidades que queiram realizar o
 controle do fluxo de estudantes.
 
-
-\section{Estrutura do Trabalho}
+\section{Objetivos}
+\subsection{Objetivo Geral}
+Busca-se viabilizar um software e estrutura de hardware capazes de exercer o controle de acesso de maneira que o custo seja reduzido, mostrando significativa economia para com tecnologias atualmente disponíveis. Ambos, tornarão
+possível a implementação de um sistema confiável que auxiliará na segurança e que,
+quando aplicadas corretamente, serão benéficas para todas as pessoas que circulam
+por estas instituições, sejam elas quais forem. 
+\subsection{Objetivos Específicos}
+\begin{itemize}
+    \item Desenvolver uma ferramenta capaz de identificar e autorizar a entrada e saída daqueles
+    inseridos em um escopo pré definido;
+    \item Desenvolver uma ferramenta que execute com o mínimo de erros possível suas funções;
+    \item Mostrar economia relativa ao uso de tecnologia similar já existente no cenário tecnológico atual.
+    %\item Implementar de forma íntegra o software desenvolvido.
+\end{itemize}        
+    
+%\section{Estrutura do Trabalho}
 % TODO: This section
-Este trabalho está dividido em sete capítulos.
-O \autoref{cap:introducao} expõe o contexto do estudo,
+%Este trabalho está dividido em sete capítulos.
+%O \autoref{cap:introducao} expõe o contexto do estudo,
 % as justificativas desta pesquisa e os objetivos a serem atingidos.
 % O \autoref{cap:fundamentacao} apresenta conceitos de caracterização de
 % materiais, relata algumas normas de organizações internacionais para este
